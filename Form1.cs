@@ -24,10 +24,10 @@ namespace Attendance
         public Form1()
         {
             InitializeComponent();
-            server = "172.16.153.91";
-            database = "cubox_acs";
-            uid = "cubox_dba";
-            password = "cubox_dba";
+            server = "";
+            database = "";
+            uid = "";
+            password = "";
             string connectionString = $"SERVER={server};DATABASE={database};UID={uid};PASSWORD={password};";
             connection = new MySqlConnection(connectionString);
             DTP_DT.Value = new DateTime(DateTime.UtcNow.Ticks);
